@@ -2,30 +2,23 @@
 
 class Text
 {
-	char* text = nullptr;
+protected:
+	char* text;
 public:
-	Text()
-	{
-		text = new char[50];
-		std::cout << "Enter a text:\n";
-		/*std::cin.ignore();*/
-		std::cin.getline(text, 50);
-	}
-
-	void Change_Text()
-	{
-		std::cout << "Enter a text:\n";
-		std::cin.ignore();
-		std::cin.getline(text, 50);
-	}
-
-	virtual void operator <<(Text L)
-	{
-		std::cout << "Text:\n";
-		for (int i = 0; text[i] != '\0'; i++)
-			std::cout << text[i];
-		std::cout << std::endl;
-	}
-
-	char* Get_Text() { return text; }
+Text()
+{
+	text = new char[50];
+	text[0] = 'N';
+	text[1] = 'e';
+	text[2] = 'w';
+	text[3] = ' ';
+	text[4] = 't';
+	text[5] = 'e';
+	text[6] = 'x';
+	text[7] = 't';
+	text[8] = '\0';
+}
+void virtual Print();
+char* Get_Text() { return text; }
+void Change_Text(char* a) { text = a; }
 };

@@ -1,31 +1,24 @@
 #pragma once
+#include"Text.h"
 
-class URL
+class URL: public Text
 {
-	char* U_R_L = nullptr;
+protected:
+	char* url;
 public:
-	URL()
+	URL() : Text() 
 	{
-		U_R_L= new char[25];
-		std::cout << "Enter an URL:\n";
-		std::cin.ignore();
-		std::cin.getline(U_R_L, 25);
+		url = new char[25];
+		url[0] = 'N';
+		url[1] = 'e';
+		url[2] = 'w';
+		url[3] = ' ';
+		url[4] = 'U';
+		url[5] = 'R';
+		url[6] = 'L';
+		url[7] = '\0';
 	}
-
-	void Change_URL()
-	{
-		std::cout << "Enter an URL:\n";
-		std::cin.ignore();
-		std::cin.getline(U_R_L, 25);
-	}
-
-	virtual void operator <<(URL L)
-	{
-		std::cout << "URL:\n";
-		for (int i = 0; U_R_L[i] != '\0'; i++)
-			std::cout << U_R_L[i];
-		std::cout << std::endl;
-	}
-
-	char* Get_U_R_L() { return U_R_L; }
+	void virtual Print() override;
+	char* Get_URL() { return url; }
+	void Change_URL(char* a) { url = a; }
 };

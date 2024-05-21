@@ -1,5 +1,2 @@
 ﻿  z6.1.cpp
-D:\C++\z6.1\z6.1\Button.h(3,22): warning C4584: Button: базовый класс "Text" уже является базовым классом для "ToolTipText"
-D:\C++\z6.1\z6.1\Text.h(3,7): message : см. объявление "Text"
-D:\C++\z6.1\z6.1\ToolTipText.h(3,7): message : см. объявление "ToolTipText"
   z6.1.vcxproj -> D:\C++\z6.1\x64\Debug\z6.1.exe

@@ -127,23 +127,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Base.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="Elipse.cpp" />
+    <ClCompile Include="ElipseColor.cpp" />
+    <ClCompile Include="HyperlinkLabel.cpp" />
+    <ClCompile Include="Text.cpp" />
+    <ClCompile Include="TextBox.cpp" />
+    <ClCompile Include="ToolTipText.cpp" />
+    <ClCompile Include="URL.cpp" />
     <ClCompile Include="z6.1.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BorderColor.h" />
     <ClInclude Include="Button.h" />
     <ClInclude Include="Color.h" />
-    <ClInclude Include="Coordinates.h" />
-    <ClInclude Include="Ellipse.h" />
-    <ClInclude Include="FillColor.h" />
+    <ClInclude Include="Elipse.h" />
+    <ClInclude Include="ElipseColor.h" />
+    <ClInclude Include="Base.h" />
     <ClInclude Include="HyperlinkLabel.h" />
-    <ClInclude Include="ReadOnly.h" />
-    <ClInclude Include="Size.h" />
     <ClInclude Include="Text.h" />
     <ClInclude Include="TextBox.h" />
     <ClInclude Include="ToolTipText.h" />
     <ClInclude Include="URL.h" />
-    <ClInclude Include="Visible.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
