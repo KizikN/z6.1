@@ -19,6 +19,9 @@ int main()
 	char a[6]{ "Hello" };
 	B.Change_ToolTipText(a);
 	cout << B << endl;
+	cout << T << endl;
+	cout << E << endl;
+	cout << H << endl;
 	/*cout << T << endl;
 	cout << E << endl;
 	cout << H << endl;*/

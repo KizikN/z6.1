@@ -5,6 +5,7 @@ using namespace std;
 
 void Text::Print()
 {
+	/*Base::Print();*/
 	cout << "Text:" << endl;
 	for (int i = 0; text[i] != '\0'; i++)
 		cout << text[i];

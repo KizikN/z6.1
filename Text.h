@@ -1,11 +1,12 @@
 #pragma once
+#include"Base.h"
 
-class Text
+class Text: public Base 
 {
 protected:
 	char* text;
 public:
-Text()
+Text(): Base()
 {
 	text = new char[50];
 	text[0] = 'N';

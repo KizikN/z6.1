@@ -3,12 +3,10 @@
 #include"ToolTipText.h"
 #include<iostream>
 
-class Button: public Base, public ToolTipText
+class Button:public ToolTipText
 {
-protected:
-
 public:
-	Button():Base(), ToolTipText(){}
+	Button():ToolTipText(){}
 	void Print() override;
 	friend std::ostream& operator <<(std::ostream& os, Button& V) { V.Print(); return os; }
 };

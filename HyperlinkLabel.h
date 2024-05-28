@@ -6,19 +6,31 @@
 #include<iostream>
 
 
-class HyperlinkLabel: public Base, public URL
+class HyperlinkLabel:public URL
 {
 protected:
 	Color H;
 public:
-	HyperlinkLabel() : Base(), URL(){}
+	HyperlinkLabel() :URL(){}
 	void Print() override;
 	int Get_Color_R(){ return H.R; }
 	int Get_Color_G() { return H.G; }
 	int Get_Color_B() { return H.B; }
-	void Change_Color_R(unsigned int a) { H.R = a; }
-	void Change_Color_G(unsigned int a) { H.G = a; }
-	void Change_Color_B(unsigned int a) { H.B = a; }
+	void Change_Color_R(unsigned int a) 
+	{
+		if (a > 0 && a <= 256)
+		H.R = a; 
+	}
+	void Change_Color_G(unsigned int a) 
+	{
+		if (a > 0 && a <= 256)
+		H.G = a;
+	}
+	void Change_Color_B(unsigned int a) 
+	{ 
+		if (a > 0 && a <= 256)
+		H.B = a; 
+	}
 	friend std::ostream& operator <<(std::ostream& os, HyperlinkLabel& V) { V.Print(); return os;}
 };
 
